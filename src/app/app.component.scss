@@ -1,0 +1,49 @@
+mat-sidenav-container {
+    mat-sidenav {
+        min-width: 16rem;
+    }
+    mat-sidenav-content {
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+        .filler {
+            height: 56px;
+            background-color: red;
+        }
+        main {
+            // background-color: red;
+            // position: relative;
+            filter {
+                // top: 56px;
+                // width: 100%;
+                // position: fixed;
+                // z-index: 100;
+            }
+            router-outlet {
+            }
+        }
+        footer {
+            background-color: black;
+            color: white;
+            z-index: 100;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    mat-sidenav-container {
+        mat-sidenav {
+        }
+        mat-sidenav-content {
+            .filler {
+                height: 64px;
+                background-color: red;
+            }
+        }
+    }
+}

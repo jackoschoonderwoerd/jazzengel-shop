@@ -1,0 +1,103 @@
+mat-toolbar {
+    background-color: var(--jazz-black);
+    justify-content: space-between;
+    .toolbar-content-left {
+        // display: flex;
+        .home {
+            cursor: pointer;
+            mat-icon {
+                color: var(--jazz-orange);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0.3rem;
+            }
+        }
+        .menu {
+            cursor: pointer;
+        }
+        mat-icon {
+        }
+    }
+
+    .toolbar-content-right {
+        display: flex;
+        // gap: 1rem;
+        .cd-container-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cd-container {
+                color: var(--jazz-orange);
+                width: 1.1rem;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .filter_view-type {
+            display: flex;
+            // border: 1px solid var(--jazz-orange);
+            // gap: 1rem;
+            .filter {
+                padding: 0 0.7rem;
+                color: var(--jazz-orange);
+                margin-right: 1rem;
+                cursor: pointer;
+            }
+            .filterActive {
+                border-radius: 0.3rem;
+                color: var(--jazz-black);
+                background-color: var(--jazz-green);
+            }
+
+            .view-type {
+                color: var(--jazz-orange);
+                cursor: pointer;
+            }
+        }
+
+        .customer-name {
+            color: var(--jazz-orange);
+            cursor: pointer;
+        }
+        .cart-icon_cart-items {
+            display: flex;
+            color: var(--jazz-orange);
+            cursor: pointer;
+            align-items: center;
+            .cart-icon {
+                color: var(--jazz-orange);
+            }
+            .cart-items {
+                color: var(--jazz-orange);
+                margin-left: 0.2rem;
+            }
+        }
+        .logout {
+            cursor: pointer;
+            mat-icon {
+                color: var(--jazz-orange);
+            }
+        }
+    }
+}
+
+.link {
+    // outline: 1px solid red;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+}
+
+.active-link {
+    border-radius: 0.3rem;
+    color: var(--jazz-black);
+    background-color: var(--jazz-orange);
+    i {
+        color: var(--jazz-black);
+    }
+}
+
+.cart-selected {
+    color: black;
+}
